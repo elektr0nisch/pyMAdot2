@@ -18,4 +18,27 @@ pip install pyMAdot2
 
 ## Example
 
-Coming soon...
+```python
+from pymadot2 import Dot2
+
+import asyncio
+import aiohttp
+
+async def main():
+    async with aiohttp.ClientSession() as session:
+        await run(session)
+
+async def run(session):
+    console = await Dot2.create(
+        session,
+        "127.0.0.1",
+        "test"
+    )
+
+    await console.command("Fixture 1")
+    await console.command("At 100")
+    await asyncio.sleep(1)
+    await console.disconnect()
+
+asyncio.run(main())
+```

@@ -13,7 +13,7 @@ setup(
     url="https://github.com/elektr0nisch/pyMAdot2",
     author="Linus Groschke",
     author_email="linus@elektronisch.dev",
-    description="Python library for MA Lighting dot2",
+    description="Python library for MA Lighting dot2 console",
     long_description=README_FILE.read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
     packages=['pyMAdot2'],

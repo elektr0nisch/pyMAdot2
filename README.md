@@ -1,4 +1,4 @@
-# PyDot2
+# pyMAdot2
 
 <img src="https://xom.malighting.com/xom-rest/assets/da4da7d0-4cfe-40da-9023-4fa866e38f25/preview?access_token=A9OYsVma9vxvXaaqzsVFtsR6K14&mimeType=image%2Fpng&width=1170&height=700" width=20% height=20%>
 

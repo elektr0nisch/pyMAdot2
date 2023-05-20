@@ -4,7 +4,7 @@ from setuptools import setup
 
 PROJECT_DIR = Path(__file__).parent.resolve()
 README_FILE = PROJECT_DIR / "README.md"
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 
 setup(
     name='pyMAdot2',
@@ -17,7 +17,7 @@ setup(
     long_description=README_FILE.read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
     packages=['pyMAdot2'],
-    python_requires=">=3.10",
+    python_requires=">=3.9",
     zip_safe=True,
     platforms="any",
     install_requires=["aiohttp"],
@@ -26,6 +26,7 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ]

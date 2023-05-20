@@ -49,6 +49,9 @@ class Dot2:
         while True:
             message = await self.ws.receive()
 
+            if self.initialized:
+                await self.send({"session": self.session_id})
+
             if message.type == aiohttp.WSMsgType.TEXT:
                 data = json.loads(message.data)
                 if "status" in data:
